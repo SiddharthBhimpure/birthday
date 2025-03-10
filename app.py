@@ -425,7 +425,7 @@ if not st.session_state.revealed:
         if st.button("✨ Open Your Letter ✨"):
             st.session_state.revealed = True
             st.session_state.show_confetti = True
-            st.experimental_rerun()
+            st.rerun()
 
 # If the letter has been revealed
 if st.session_state.revealed:
